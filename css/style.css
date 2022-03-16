@@ -1,0 +1,116 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, button{
+    font-family: "Lexend Deca", sans-serif;
+}
+
+h3{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+img{
+    margin-bottom: 25px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.card{
+    padding: 20px;
+}
+
+.card-sedan{
+    background-color: var(--Bright-orange);
+    color: white;
+    padding: 30px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card-suvs{
+    background-color: var(--Dark-cyan);
+    color: white;
+    padding: 30px;
+}
+
+.card-lux{
+    background-color: var(--Very-dark-cyan);
+    color: white;
+    padding: 30px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.bttn{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 31px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-sedan .bttn{
+    color: var(--Bright-orange);
+}
+
+.card-suvs .bttn{
+    color: var(--Dark-cyan);
+}
+
+.card-lux .bttn{
+    color: var(--Very-dark-cyan);
+}
+
+.bttn:hover{
+    background-color: transparent;
+    color: white;
+}
+
+.att{
+    font-size: 15px;
+    text-align: center;
+}
+
+@media (min-width: 700px){
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 900px;
+        min-height: 90vh;
+        margin: auto;
+        padding: 50px;
+        }
+
+    .card-sedan{
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    .card-lux{
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    p{
+        margin-bottom: 90px;
+    }
+}
+
